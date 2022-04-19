@@ -1,0 +1,27 @@
+---------------------Barème des points:
+
+♦ Code HTML commenté
+♦ Code CSS commenté
+♦ Code JavaScript commenté
+♦ Favicon
+♦ Balises meta (description, author, keywords)
+
+♦ Navigation facile à comprendre
+♦ 10 pages minimum
+♦ L'auteur ainsi que tous les acteurs du site sont bien identifiés
+♦ L'adresse de courriel de l'auteur est disponible
+♦ Le site utilise du son
+♦ Le site utilise de la vidéo
+♦ Le site utilise des effets (fondus, glissement etc...)
+
+♦ Le graphisme du site est attrayant
+♦ Les images sont de bonne qualité
+♦ Le texte est lisible sans effort
+♦ Les couleurs sont "harmonieuses"
+
+♦ Le responsive est bien adapté au format smartphone
+♦ Le responsive est bien adapté au format tablette
+♦ Le responsive est bien adapté au format desktop
+
+♦ Le quizz est bien intégré dans la charte
+♦ Le formulaire est bien intégré dans la charte

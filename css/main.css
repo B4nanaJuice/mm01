@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@700&display=swap');
+
+:root {
+    --white: #e7e7e7;
+    --black: #181818;
+
+    --primary: #4696db;
+    --lightp: #99cfff;
+    --darkp: #004c8f;
+
+    --lights: #dba246;
+    --darks: #8f5e11;
+
+    --mainfont: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    text-decoration: none;
+    list-style: none;
+}
