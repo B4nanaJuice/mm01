@@ -1,0 +1,102 @@
+<nav>
+  <div class="nav-top">
+    <div class="logo">
+      <img src="media/logo.png" alt="Logo de Hambourg" />
+    </div>
+
+    <div class="links">
+      <a onclick="changeURL('home')">
+        <i class="fa-solid fa-house"></i>
+        <p>Accueil</p>
+      </a>
+
+      <div class="dropdown">
+        <button class="dropbtn">
+          <i class="fa-solid fa-angles-up"></i>
+          <i class="fa-solid fa-building"></i>
+          <p>Quartiers <i class="fa-solid fa-angles-down"></i></p>
+        </button>
+        <div class="dropdown-content">
+          <a onclick="changeURL('eimsbuttel')">Eimsbüttel</a>
+          <a onclick="changeURL('bergedorf')">Bergedorf</a>
+          <a onclick="changeURL('hnord')">Hambourg Nord</a>
+          <a onclick="changeURL('wandsbek')">Wandsbek</a>
+          <a onclick="changeURL('harburg')">Harburg</a>
+          <a onclick="changeURL('hcentre')">Hambourg-Centre</a>
+          <a onclick="changeURL('altone')">Altone</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">
+          <i class="fa-solid fa-angles-up"></i>
+          <i class="fa-solid fa-mug-saucer"></i>
+          <p>Traditions <i class="fa-solid fa-angles-down"></i></p>
+        </button>
+        <div class="dropdown-content">
+          <a onclick="changeURL('speicherstadt')">Speicherstadt</a>
+          <a onclick="changeURL('labkaus')">Labkaus</a>
+          <a onclick="changeURL('fruhlingsdom')">Frühlingsdom</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">
+          <i class="fa-solid fa-angles-up"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <p>Evènements <i class="fa-solid fa-angles-down"></i></p>
+        </button>
+        <div class="dropdown-content">
+          <a onclick="changeURL('filmfest')">FilmFest</a>
+          <a onclick="changeURL('hanseboot')">Hanseboot</a>
+          <a onclick="changeURL('christmas')">Marché de Noël</a>
+          <a onclick="changeURL('pride')">Pride 2022</a>
+        </div>
+      </div>
+
+      <a onclick="changeURL('gallery')">
+        <i class="fa-solid fa-camera"></i>
+        <p>Galerie</p>
+      </a>
+      <a onclick="changeURL('quizz')">
+        <i class="fa-solid fa-clipboard-question"></i>
+        <p>Quizz</p>
+      </a>
+      <a onclick="changeURL('shop')">
+        <i class="fa-solid fa-basket-shopping"></i>
+        <p>Boutique</p>
+      </a>
+    </div>
+  </div>
+  <div class="nav-bottom">
+    <div class="nav-bottom-content">
+      <select name="language" id="language" onchange="changeLanguage()">
+        <option value="en">English</option>
+        <option selected value="fr">Français</option>
+        <option value="de">Deutsch</option>
+      </select>
+
+      <button class="themeToggle" onclick="toggleTheme()">
+        <div class="sun">
+          <i class="fa-solid fa-sun"></i>
+        </div>
+        <div class="moon">
+          <i class="fa-solid fa-moon"></i>
+        </div>
+      </button>
+
+      <div class="music">
+        <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/playlist/6TSbHa9T4fIzCU2xm1Irp1?utm_source=generator"
+          width="504px"
+          height="80"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        >
+        </iframe>
+      </div>
+    </div>
+  </div>
+</nav>

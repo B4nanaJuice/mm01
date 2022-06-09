@@ -1,0 +1,102 @@
+<nav>
+  <div class="nav-top">
+    <div class="logo">
+      <img src="media/logo.png" alt="Logo de Hambourg" />
+    </div>
+
+    <div class="links">
+      <a href="">
+        <i class="fa-solid fa-house"></i>
+        <p>Startseite</p>
+      </a>
+
+      <div class="dropdown">
+        <button class="dropbtn">
+          <i class="fa-solid fa-angles-up"></i>
+          <i class="fa-solid fa-building"></i>
+          <p>Stück <i class="fa-solid fa-angles-down"></i></p>
+        </button>
+        <div class="dropdown-content">
+          <a href="">Eimsbüttel</a>
+          <a href="">Bergedorf</a>
+          <a href="">Hambourg Norde</a>
+          <a href="">Wandsbek</a>
+          <a href="">Harburg</a>
+          <a href="">Hambourg-Mitte</a>
+          <a href="">Altone</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">
+          <i class="fa-solid fa-angles-up"></i>
+          <i class="fa-solid fa-mug-saucer"></i>
+          <p>Traditionen <i class="fa-solid fa-angles-down"></i></p>
+        </button>
+        <div class="dropdown-content">
+          <a href="">Speicherstadt</a>
+          <a href="">Labkaus</a>
+          <a href="">Frühlingsdom</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">
+          <i class="fa-solid fa-angles-up"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <p>Vorfall <i class="fa-solid fa-angles-down"></i></p>
+        </button>
+        <div class="dropdown-content">
+          <a href="">FilmFest</a>
+          <a href="">Hanseboot</a>
+          <a href="">Weihnachtsmarkt</a>
+          <a href="">Pride 2022</a>
+        </div>
+      </div>
+
+      <a href="">
+        <i class="fa-solid fa-camera"></i>
+        <p>Galerie</p>
+      </a>
+      <a href="">
+        <i class="fa-solid fa-clipboard-question"></i>
+        <p>Quiz</p>
+      </a>
+      <a href="">
+        <i class="fa-solid fa-basket-shopping"></i>
+        <p>Geschäft</p>
+      </a>
+    </div>
+  </div>
+  <div class="nav-bottom">
+    <div class="nav-bottom-content">
+      <select name="language" id="language" onchange="changeLanguage()">
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option selected value="de">Deutsch</option>
+      </select>
+
+      <button class="themeToggle" onclick="toggleTheme()">
+        <div class="sun">
+          <i class="fa-solid fa-sun"></i>
+        </div>
+        <div class="moon">
+          <i class="fa-solid fa-moon"></i>
+        </div>
+      </button>
+
+      <div class="music">
+        <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/playlist/6TSbHa9T4fIzCU2xm1Irp1?utm_source=generator"
+          width="504px"
+          height="80"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        >
+        </iframe>
+      </div>
+    </div>
+  </div>
+</nav>
