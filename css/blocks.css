@@ -1,3 +1,4 @@
+/* Stylisation des div "flex" */
 .flex {
   display: flex;
   justify-content: space-between;
@@ -8,12 +9,17 @@
   padding: 15px 25px;
 }
 
+/* Stylisation des div "card" */
 .card {
   padding: 15px;
   background: var(--light);
   border-radius: 15px;
   transition: transform 0.3s ease;
   margin: 50px 0px;
+}
+
+.intro {
+  margin: auto;
 }
 
 .card img {
@@ -42,10 +48,11 @@
   border-radius: 10px;
 }
 
-.card:hover {
+.cardhover:hover {
   transform: scale(1.1);
 }
 
+/* Stylisation des autres composants des pages */
 .visits button {
   outline: none;
   background: transparent;
@@ -72,8 +79,93 @@
   width: 100%;
 }
 
-.flex img {
-  max-width: 300px;
+.imgs {
+  column-gap: 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.imgs div {
+  width: 80%;
+  margin: 15px 30px;
+  display: inline-block;
+}
+
+.gallery img {
+  width: 100%;
+  margin: auto;
+}
+
+.imgs .card button {
+  transition: transform .3s ease;
+}
+
+.imgs .card button:hover {
+  transform: scale(1.1);
+}
+
+.credits .people {
+  display: flex;
+  margin: auto;
+  justify-content: space-around
+}
+
+.credits .card {
+  margin: 15px auto;
+}
+
+.credits .card p {
+  text-align: left;
+}
+
+.credits .socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 25px;
+  margin: 15px;
+}
+
+.socials a {
+  text-decoration: none;
+}
+
+form .flex {
+  margin: 15px auto;
+}
+
+form input, form textarea {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: var(--gray) 2px solid;
+  border-left: var(--gray) 1px solid;
+  padding: 5px;
+  width: 70%;
+  margin: 0px 5%;
+}
+
+form input[type=submit] {
+  outline: none;
+  background: rgba(17, 27, 41, 0.1);
+  color: var(--main);
+  height: 50px;
+  width: 80%;
+  margin: 15px auto;
+  font-size: 1em;
+  font-weight: bolder;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 769px) {
@@ -100,6 +192,18 @@
 
   .infos-page img {
     margin: 50px;
+  }
+
+  .imgs {
+    columns: 3;
+  }
+
+  .credits .card {
+    width: 40%;
+  }
+
+  .people {
+    width: 60%;
   }
 }
 
@@ -135,6 +239,18 @@
 
   .infos-page img {
     margin: 20px;
+  }
+
+  .imgs {
+    columns: 2;
+  }
+
+  .people {
+    width: 80%;
+  }
+
+  .credits .card {
+    width: 40%;
   }
 }
 
@@ -174,4 +290,22 @@
     margin: 15px auto;
     width: 80%;
   }
+
+  .imgs {
+    columns: 1;
+    width: 100%;
+  }
+
+  .people {
+    flex-direction: column;
+  }
+
+  .credits .card {
+    width: 80%;
+  }
+
+  .credits input, .credits textarea {
+    margin: auto;
+  }
+
 }

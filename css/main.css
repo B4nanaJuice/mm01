@@ -1,3 +1,4 @@
+@charset 'utf-8';
 /* Importation de la police Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
@@ -12,6 +13,7 @@
   --s: #84d1dc;
 }
 
+/* Création d'un jeu de couleur pour le thème clair */
 .light {
   --light: var(--l1);
   --static-light: var(--l1);
@@ -24,6 +26,7 @@
   --sec: var(--s);
 }
 
+/* Création d'un jeu de couleur pour le thème combre */
 .dark {
   --light: var(--g1);
   --static-light: var(--l1);
@@ -36,7 +39,7 @@
   --sec: var(--s);
 }
 
-
+/* Stylisation des composants principaux de la page */
 body {
   background: var(--light2);
 }
@@ -49,6 +52,7 @@ body, body * {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -195,7 +199,6 @@ nav {
 }
 
 /* Stylisation de la partie basse de la barre de navigation */
-
 .nav-bottom {
     height: 75px;
     margin-left: 5%;
@@ -358,55 +361,6 @@ footer .map {
   );
 }
 
-/* PERSONNAGE QUI AIDE */
-.bot {
-  position: fixed;
-  bottom: 3%;
-  right: 3%;
-  z-index: 99;
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  border: none;
-  outline: none;
-  box-shadow: 1px 1px 5px black;
-}
-
-.dialogue {
-  position: fixed;
-  bottom: 6%;
-  right: 3%;
-  width: 300px;
-  height: 400px;
-  background: lime;
-  border-radius: 20px 20px 0px 20px;
-  padding: 15px;
-  box-shadow: 1px 1px 10px black;
-}
-
-.dialogue {
-  z-index: 98;
-}
-
-.dialogue-show {
-  transition: height 0.5s ease 0.3s, margin-right 0.3s ease;
-}
-
-.dialogue-show * {
-  transition: opacity 0.3s ease 0.8s;
-}
-
-.dialogue-hide {
-  height: 0px;
-  margin-right: -100%;
-  transition: height 0.5s ease 0.3s, margin-right 0.3s ease 0.8s;
-}
-
-.dialogue-hide * {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
 .hidden {
   display: none;
 }
@@ -422,8 +376,10 @@ section.main {
   color: var(--gray);
   width: 80%;
   margin: auto;
+  max-width: 1920px;
 }
 
+/* Gestion des composants principaux lors du changement de taille de fenêtre (Responsive) */
 @media only screen and (min-width: 769px) {
   nav {
     top: 0;
@@ -456,6 +412,10 @@ section.main {
 
   .nav-top i:not(.fa-angles-down) {
     display: none;
+  }
+
+  .nav-top {
+    font-size: .8em;
   }
 
   nav {
@@ -527,6 +487,10 @@ section.main {
   .nav-bottom select {
     margin-right: 25px;
     width: 75px;
+  }
+
+  footer {
+    padding-bottom: 50px;
   }
 
   footer .content {

@@ -1,5 +1,6 @@
+// Fonction pour changer l'URL (sans recharger la page)
 function changeURL(newURL) {
-  if (!validURL()) language = "en";
+  if (!validURL()) language = "fr";
   else {
     url = window.location.href;
     parts = url.split("?");
@@ -12,27 +13,14 @@ function changeURL(newURL) {
 
   // Remplacement de l'URL actuelle par la nouvelle URL sans recharger le site
   window.history.replaceState(nextState, " ", nextURL);
-  refresh(language, newURL);
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  refreshPage(language, newURL);
+  if (newURL == "quizz") {
+    startQuizz();
+  }
 }
 
-function changeLanguage() {
-  let l = document.getElementById("language").value;
-  let url = window.location.href;
-  let parts = url.split("?");
-  let page = parts[parts.length - 1];
-
-  window.history.replaceState(
-    { additionalInformation: "URL update" },
-    " ",
-    "?" + l + "?" + page
-  );
-  refresh(l, page);
-}
-
-window.addEventListener("hashchange", function () {
-  if (!validURL) changeURL("home");
-});
-
+// Fonction pour savoir si l'URL est valide
 function validURL() {
   let url = window.location.href;
   let parts = url.split("?");
@@ -40,8 +28,8 @@ function validURL() {
   let language = parts[parts.length - 2];
 
   if (
-    !["en", "de", "fr"].includes(language) ||
-    parts.length != 3 ||
+    !["fr"].includes(language) || // Si la langue n'est pas français
+    parts.length != 3 || // Si il n'y a pas 3 parties dans l'URL
     ![
       "home",
       "eimsbuttel",
@@ -52,7 +40,7 @@ function validURL() {
       "hcentre",
       "altona",
       "speicherstadt",
-      "labkaus",
+      "labskaus",
       "fruhlingsdom",
       "filmfest",
       "hanseboot",
@@ -62,7 +50,7 @@ function validURL() {
       "quizz",
       "shop",
       "credits",
-    ].includes(page)
+    ].includes(page) // Si la page n'existe pas
   ) {
     return false;
   } else {
@@ -70,6 +58,7 @@ function validURL() {
   }
 }
 
+// Initialise la validité de la page
 function init() {
   if (validURL() == false) {
     changeURL("home");

@@ -17,3 +17,12 @@ function refresh(l, p) {
     .then((response) => response.text())
     .then((text) => (content.innerHTML = text));
 }
+
+// Fonction servant à actualiser la page (sans actualiser la barre de navigation et le pied de page)
+function refreshPage(l, p) {
+  var content = document.querySelector(".main");
+
+  fetch(`html/${l}/${p}.html`)
+    .then((response) => response.text())
+    .then((text) => (content.innerHTML = text));
+}

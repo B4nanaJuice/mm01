@@ -4,30 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import des fichiers css-->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/blocks.css" />
+    <link rel="stylesheet" href="css/quizz.css" />
+    <!--Icône d'onglet de page-->
     <link rel="shortcut icon" href="media/logo.png" type="image/x-icon" />
+    <!--Titre de la page-->
     <title>Hambourg</title>
   </head>
-  <body class="light">
+  <!--corps de la page de classe "light"-->
+  <body class="light" onload="startQuizz()">
+    <!--Vidéo de fond-->
     <div class="background-vid">
       <video autoplay muted loop class="bgvid">
         <source src="media/timelapse.mp4" type="video/mp4" />
       </video>
     </div>
 
+    <!--Div pour accueillir la barre de navigation (grâce à la fonction en JavaScript)-->
     <nav class="nav"></nav>
+    <!--Div pour accueillir le contenu de la page-->
     <section class="main"></section>
+    <!--Div pour accueillir le pied de page-->
     <footer class="footer"></footer>
 
-    <button class="bot" onclick="show('dialogue')">O</button>
-    <div class="dialogue dialogue-hide">
-      <h3>Need help ?</h3>
-      <p>We're here to help you !</p>
-      <input type="text" />
-      <input type="email" name="s" id="s" />
-    </div>
-
+    <!--Import des fichiers JavaScript-->
     <script src="js/blockManagement.js"></script>
     <script src="js/urlManagement.js"></script>
     <script src="js/utils.js"></script>
@@ -35,5 +37,6 @@
       src="https://kit.fontawesome.com/f64f9053f0.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/quizHandler.js"></script>
   </body>
 </html>
