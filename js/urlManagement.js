@@ -50,7 +50,7 @@ function validURL() {
       "wandsbek",
       "harburg",
       "hcentre",
-      "altone",
+      "altona",
       "speicherstadt",
       "labkaus",
       "fruhlingsdom",

@@ -1,166 +1,177 @@
 .flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .header .flex div {
-    padding: 15px 25px;
+  padding: 15px 25px;
 }
 
 .card {
-    padding: 15px;
-    background: var(--light);
-    border-radius: 15px;
-    transition: transform .3s ease;
-    margin: 50px 0px;
+  padding: 15px;
+  background: var(--light);
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  margin: 50px 0px;
 }
 
 .card img {
-    width: 100%;
-    margin: auto;
+  width: 100%;
+  margin: auto;
 }
 
 .card h3 {
-    margin: 15px 0px;
+  margin: 15px 0px;
 }
 
 .card p {
-    margin: 15px 0px;
+  margin: 15px 0px;
 }
 
 .card button {
-    outline: none;
-    background: rgba(17, 27, 41, .1);
-    color: var(--main);
-    height: 50px;
-    width: 80%;
-    margin: 15px 10%; 
-    font-size: 1em;
-    font-weight: bolder;
-    border: none;
-    border-radius: 10px;
+  outline: none;
+  background: rgba(17, 27, 41, 0.1);
+  color: var(--main);
+  height: 50px;
+  width: 80%;
+  margin: 15px 10%;
+  font-size: 1em;
+  font-weight: bolder;
+  border: none;
+  border-radius: 10px;
 }
 
 .card:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .visits button {
-    outline: none;
-    background: transparent;
-    color: var(--main);
-    height: 50px;
-    width: 80%;
-    margin: 15px 10%; 
-    font-size: 1em;
-    font-weight: bolder;
-    border: var(--main) 2px solid;
-    border-radius: 10px;
+  outline: none;
+  background: transparent;
+  color: var(--main);
+  height: 50px;
+  width: 80%;
+  margin: 15px 10%;
+  font-size: 1em;
+  font-weight: bolder;
+  border: var(--main) 2px solid;
+  border-radius: 10px;
 }
 
 .visits {
-    padding: 50px 15px;
+  padding: 50px 15px;
 }
 
-.visits p, .visits img{
-    margin: 15px;
+.visits p,
+.visits img {
+  margin: 15px;
+}
+
+.infos-page img {
+  width: 100%;
+}
+
+.flex img {
+  max-width: 300px;
 }
 
 @media only screen and (min-width: 769px) {
-    .flex {
-        flex-direction: row;
-    }
+  .flex {
+    flex-direction: row;
+  }
 
-    .intro  {
-        width: 50%;
-    }
+  .intro {
+    width: 50%;
+  }
 
-    .news {
-        width: 33%;
-        padding: 5px;
-    }
+  .news {
+    width: 33%;
+    padding: 5px;
+  }
 
-    .visits {
-        width: 66%;
-    }
+  .visits {
+    width: 66%;
+  }
 
-    .infos-page p {
-        padding: 50px;
-    }
-    
-    .infos-page img {
-        margin: 50px;
-    }
+  .infos-page p {
+    padding: 50px;
+  }
+
+  .infos-page img {
+    margin: 50px;
+  }
 }
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
-    .flex {
-        flex-direction: row;
-    }
+  .flex {
+    flex-direction: row;
+  }
 
-    .intro  {
-        width: 75%;
-    }
+  .intro {
+    width: 75%;
+  }
 
-    .news {
-        width: 45%;
-        padding: 10px;
-    }
+  .news {
+    width: 45%;
+    padding: 10px;
+  }
 
-    .visits {
-        width: 55%;
-    }
+  .visits {
+    width: 55%;
+  }
 
-    .quartier .flex {
-        flex-direction: column;
-    }
-    .quartier .flex img {
-        width: 90%;
-        margin: 15px auto;
-    }
+  .quartier .flex {
+    flex-direction: column;
+  }
+  .quartier .flex img {
+    width: 90%;
+    margin: 15px auto;
+  }
 
-    .infos-page p {
-        padding: 20px;
-    }
-    
-    .infos-page img {
-        margin: 20px;
-    }
+  .infos-page p {
+    padding: 20px;
+  }
+
+  .infos-page img {
+    margin: 20px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
-    .flex {
-        flex-direction: column;
-    }
+  .flex {
+    flex-direction: column;
+  }
 
-    .news, .visits {
-        width: 100%;
-    }
+  .news,
+  .visits {
+    width: 100%;
+  }
 
-    .card {
-        width: 80%;
-        margin: 50px auto;
-    }
+  .card {
+    width: 80%;
+    margin: 50px auto;
+  }
 
-    .visits {
-        margin: 0;
-        padding: 0;
-    }
+  .visits {
+    margin: 0;
+    padding: 0;
+  }
 
-    .quartier img {
-        margin: 15px auto;
-    }
+  .quartier img {
+    margin: 15px auto;
+  }
 
-    .quartier h3 {
-        margin-left: 15px;
-    }
+  .quartier h3 {
+    margin-left: 15px;
+  }
 
-    .infos-page p {
-        padding: 15px;
-    }
-    
-    .infos-page img {
-        margin: 15px auto;
-    }
+  .infos-page p {
+    padding: 15px;
+  }
+
+  .infos-page img {
+    margin: 15px auto;
+    width: 80%;
+  }
 }
